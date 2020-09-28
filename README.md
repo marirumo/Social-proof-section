@@ -1,2 +1,2 @@
 # Social-proof-section
-challenge frontendmentor.io
+My solution to Frontend Mentor's Challenge: Social Proof Section
