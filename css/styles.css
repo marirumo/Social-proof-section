@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+body {
+  background: url("/images/bg-pattern-top-mobile.svg") top left no-repeat, url("/images/bg-pattern-bottom-mobile.svg") bottom left no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+.intro {
+  text-align: center;
+  width: 100%;
+}
+
+.intro--title {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: #502050;
+  font-size: 1.75rem;
+  margin: 75px auto 25px;
+  width: 70%;
+}
+
+.intro--body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  color: #937b92;
+  margin: 0 auto 30px;
+  width: 90%;
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.rating .box {
+  background-color: #f7f2f7;
+  border-radius: 10px;
+  height: 80px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.rating .box--stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 15px auto 20px;
+  max-width: 120px;
+  width: 40%;
+}
+
+.rating .box--title {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: #502050;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials .buyer {
+  background: #502050;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.testimonials .buyer:last-child {
+  margin-bottom: 100px;
+}
+
+.testimonials .buyer--user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px auto;
+  width: 88%;
+}
+
+.testimonials .buyer--user--avatar {
+  display: inline;
+  margin-right: 30px;
+}
+
+.testimonials .buyer--user--avatar img {
+  border-radius: 50%;
+  max-width: 45px;
+}
+
+.testimonials .buyer--user--info {
+  font-size: 0.9rem;
+}
+
+.testimonials .buyer--user--info__name {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 7px 0 5px;
+  opacity: 0.85;
+}
+
+.testimonials .buyer--user--info__subtitle {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  color: #ee68a4;
+  opacity: 0.75;
+}
+
+.testimonials .buyer--copy {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin: 0 auto 30px;
+  opacity: 0.8;
+  width: 85%;
+}
+
+.attribution {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  color: #502050;
+  font-size: .75rem;
+  margin: 75px auto 25px;
+  width: 70%;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: url("/images/bg-pattern-top-desktop.svg") top left no-repeat, url("/images/bg-pattern-bottom-desktop.svg") bottom left no-repeat;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+    width: 78%;
+  }
+  .intro {
+    margin: 130px 0 0 0;
+    text-align: left;
+    width: 42%;
+  }
+  .intro--title {
+    font-size: 2.9rem;
+    margin: 0;
+    width: 100%;
+  }
+  .intro--body {
+    line-height: 1.5rem;
+    margin: 15px 0 0;
+    width: 85%;
+  }
+  .rating {
+    margin: 140px auto 0 auto;
+    width: 42%;
+  }
+  .rating .box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 56px;
+    margin: 8px 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .rating .box--stars {
+    height: 30%;
+    margin: 0 30px;
+  }
+  .rating .box--title {
+    text-align: left;
+  }
+  .rating .box:nth-child(2) {
+    margin-left: 45px;
+  }
+  .rating .box:nth-child(3) {
+    margin-left: 90px;
+  }
+  .testimonials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 100%;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .testimonials .buyer {
+    height: 80%;
+    padding: 10px 0;
+    width: 31%;
+  }
+  .testimonials .buyer:last-child {
+    margin-bottom: 0;
+  }
+  .testimonials .buyer--user {
+    margin: 30px auto 20px;
+  }
+  .testimonials .buyer--user--avatar img {
+    max-width: 38px;
+  }
+  .testimonials .buyer--user--info {
+    font-size: 0.8rem;
+  }
+  .testimonials .buyer:nth-child(2) {
+    margin-top: 25px;
+  }
+  .testimonials .buyer:nth-child(3) {
+    margin-top: 50px;
+  }
+  .attribution {
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    color: #502050;
+    font-size: .75rem;
+    margin: 75px auto 25px;
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
